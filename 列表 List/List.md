@@ -15,7 +15,7 @@ public interface List<E> extends Collection<E>
 + [[LinkList]]
 + 向量（`vector`类）
 + 堆栈（`Stack`类）
-![[Pasted image 20260328130922.png]]
+![image2](图片/Pasted%20image%20260328130922.png)
 这些类在Collections框架中定义并实现List接口。
 ### 如何使用List？
 
