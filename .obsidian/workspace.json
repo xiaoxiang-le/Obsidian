@@ -210,12 +210,11 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -228,11 +227,10 @@
       "bases:新建数据库": false,
       "table-editor-obsidian:Advanced Tables Toolbar": false,
       "obsidian-git:Open Git source control": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
-      "terminal:Open terminal": false
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ca2871d16811cdd9",
+  "active": "be7b57b2759eb407",
   "lastOpenFiles": [
     "README.md",
     "列表 List/List.md",
