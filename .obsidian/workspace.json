@@ -11,14 +11,12 @@
             "id": "be7b57b2759eb407",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "列表 List/LinkList.md",
-                "mode": "source",
-                "source": false
+                "file": "图片/Pasted image 20260328125841.png"
               },
-              "icon": "lucide-file",
-              "title": "LinkList"
+              "icon": "lucide-image",
+              "title": "Pasted image 20260328125841"
             }
           },
           {
@@ -232,10 +230,11 @@
   },
   "active": "be7b57b2759eb407",
   "lastOpenFiles": [
-    "列表 List/ArrayList.md",
     "列表 List/LinkList.md",
     "列表 List/List.md",
+    "图片/Pasted.md",
     "图片/Pasted image 20260328125841.png",
+    "列表 List/ArrayList.md",
     "图片/Pasted image 20260328154003.png",
     "图片/Pasted image 20260328130922.png",
     "README.md",
