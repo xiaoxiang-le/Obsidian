@@ -130,10 +130,14 @@ public interface EventListener
 
 **封装变化**：针对一组相同功能但实现方式不同的行为，将它们抽象成策略接口，然后为每种具体实现创建一个策略类，最后在运行时动态选择使用哪个策略。
 相关示例：
-- Strategy（策略接口）
-	- `FlyBehavior`接口
-	- ``
-- ConcreteStrategy（具体策略）
+- Strategy（策略接口）----定义所有策略类必须实现的公共方法。
+	- `FlyBehavior`接口 
+	- `TakeOffBehavior`接口
+- ConcreteStrategy（具体策略）----实现策略接口，提供具体的算法或行为。
+	- `SubSonicFly`
+	- `SuperSonicFly`
+	- `VerticalTakeOff`
+	- `LongDistanceTakeOff`
 - Client（客户端）
 ```java
 // 1. 策略接口
