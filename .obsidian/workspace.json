@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "接口 interface.md",
+                "file": "interface.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "接口 interface"
+              "title": "interface"
             }
           },
           {
@@ -27,12 +27,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "abstract 抽象.md",
+                "file": "interface.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "abstract 抽象"
+              "title": "interface"
+            }
+          },
+          {
+            "id": "ab7957c1e8f49f4c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "数组.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "数组"
             }
           },
           {
@@ -50,7 +64,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -107,8 +121,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a652362d47ff2511",
@@ -246,23 +259,26 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f8434d67a4084259",
+  "active": "ab7957c1e8f49f4c",
   "lastOpenFiles": [
-    "接口 interface.md",
-    "abstract 抽象.md",
+    "interface.md",
+    "数组.md",
+    "List/List",
+    "List/ArrayList",
+    "abstract.md",
     "README.md",
-    "列表 List/LinkList.md",
-    "列表 List/LinkList",
-    "列表 List/LinkList/IMG-20260328193156227.png",
+    "List/LinkList.md",
+    "List/LinkList",
+    "List/LinkList/IMG-20260329213158731.png",
     "图片/Pasted image 20260328154003.png",
-    "图片/Pasted image 20260328125841.png",
-    "图片/Pasted image 20260328130922.png",
-    "列表 List/ArrayList.md",
-    "列表 List/List.md",
+    "List/ArrayList/IMG-20260329213158738.png",
+    "List/List/IMG-20260329213158741.png",
+    "List/ArrayList.md",
+    "List/List.md",
     "图片/Pasted.md",
     "Excalidraw/Drawing 2026-03-28 16.34.17.excalidraw.md",
     "Excalidraw",
-    "列表 List",
+    "List",
     "Excalidraw/Drawing 2026-03-28 16.08.12.excalidraw.md",
     "2026-03-28.md",
     "未命名.base",

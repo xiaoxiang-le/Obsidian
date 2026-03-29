@@ -1,7 +1,7 @@
 
 `ArrayList` 类是一个可以动态修改的数组，与普通数组的区别就是它是没有固定大小的限制，我们可以添加或删除元素。
 `ArrayList `继承了 `AbstractList `，并实现了 List 接口。
-![[Pasted image 20260328125841.png]]
+![[IMG-20260329213158738.png]]
 `ArrayList `类位于 java.util 包中，使用前需要引入它，语法格式如下：
 ```java
 import java.util.ArrayList; // 引入 ArrayList 类
