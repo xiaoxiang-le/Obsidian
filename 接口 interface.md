@@ -1,9 +1,6 @@
 接口（英文：Interface），在JAVA编程语言中是一个抽象类型，是抽象方法的集合，接口通常以interface来声明。一个类通过继承接口的方式，从而来继承接口的抽象方法。
-
 接口并不是类，编写接口的方式和类很相似，但是它们属于不同的概念。类描述对象的属性和方法。接口则包含类要实现的方法。
-
 除非实现接口的类是抽象类，否则该类要定义接口中的所有方法。
-
 接口无法被实例化，但是可以被实现。一个实现接口的类，必须实现接口内所描述的所有方法，否则就必须声明为抽象类。另外，在 Java 中，接口类型可用来声明一个变量，他们可以成为一个空指针，或是被绑定在一个以此接口实现的对象。
 ### 接口与类相似点：
 - 一个接口可以有多个方法。
@@ -41,4 +38,36 @@ interface Animal {
 }
 ```
 ### 接口的实现
-当类实现接口的时候，类要实现接口中所有的方法。否则，类必须声明为抽象的类。类使用`implements`关键字实现接口。在类声明中，`Implements`关键字放在`class`声明后面。实现一个接口的语法，可以使用这个公式：
+当类实现接口的时候，类要实现接口中所有的方法。否则，类必须声明为抽象的类。类使用`implements`关键字实现接口。在类声明中，`Implements`关键字放在`class`声明后面。实现一个接口的语法，下面举个接口的例子：
+```java
+/* 文件名 : MammalInt.java */
+public class MammalInt implements Animal{
+ 
+   public void eat(){
+      System.out.println("Mammal eats");
+   }
+ 
+   public void travel(){
+      System.out.println("Mammal travels");
+   } 
+ 
+   public int noOfLegs(){
+      return 0;
+   }
+ 
+   public static void main(String args[]){
+      MammalInt m = new MammalInt();
+      m.eat();
+      m.travel();
+   }
+}
+```
+以上实例编译运行结果如下:
+```java
+Mammal eats
+Mammal travels
+```
+重写接口中声明的方法时，需要注意以下规则：
+- 类在实现接口的方法时，不能抛出强制性异常，只能在接口中，或者继承接口的抽象类中抛出该强制性异常。
+- 类在重写方法时要保持一致的方法名，并且应该保持相同或者相兼容的返回值类型。
+- 如果实现接口的类是抽象类，那么就没必要实现该接口的方法。
