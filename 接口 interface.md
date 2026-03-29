@@ -17,3 +17,28 @@
         // 抽象方法
 }
 ```
+Interface关键字用来声明一个接口。下面是接口声明的一个简单例子。
+```java
+/* 文件名 : NameOfInterface.java */
+import java.lang.*;
+//引入包
+ 
+public interface NameOfInterface
+{
+   //任何类型 final, static 字段
+   //抽象方法
+}
+```
+接口有以下特性：
+- 接口是隐式抽象的，当声明一个接口的时候，不必使用**abstract**关键字。
+- 接口中每一个方法也是隐式抽象的，声明时同样不需要**abstract**关键字。
+- 接口中的方法都是公有的。
+```java
+/* 文件名 : Animal.java */
+interface Animal {
+   public void eat();
+   public void travel();
+}
+```
+### 接口的实现
+当类实现接口的时候，类要实现接口中所有的方法。否则，类必须声明为抽象的类。类使用`implements`关键字实现接口。在类声明中，`Implements`关键字放在`class`声明后面。实现一个接口的语法，可以使用这个公式：
