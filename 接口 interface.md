@@ -196,5 +196,6 @@ flyBehavior (引用)  ---------->  SubSonicFly对象
 * 如果用具体类作为类型 `protected SubSonicFly flyBehavior`
 	* 该变量只能指向`SubSonicFly`或其子类
 	* 直升机永远只能亚音速飞行，无法在运行时切换为超音速
-* 如果用接口作为类型 ·
-	* 
+* 如果用接口作为类型 `protected FlyBehavior flyBehavior`
+	* 该变量可以指向任何实现了`FlyBehavior 的类`
+	* 可以在构造器或通过 `setter `方法随时替换为 `SuperSonicFly`、`SubSonicFly` 或其他未来新增的飞行行为
