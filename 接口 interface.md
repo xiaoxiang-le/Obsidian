@@ -129,4 +129,51 @@ public interface EventListener
 ### 策略模式
 
 **封装变化**：针对一组相同功能但实现方式不同的行为，将它们抽象成策略接口，然后为每种具体实现创建一个策略类，最后在运行时动态选择使用哪个策略。
+相关示例：
+```java
+// 1. 策略接口
+interface FlyBehavior {
+    void fly();
+}
 
+// 2. 具体策略（两种飞行方式）
+class SubSonicFly implements FlyBehavior {
+    public void fly() { System.out.println("亚音速飞行！"); }
+}
+
+class SuperSonicFly implements FlyBehavior {
+    public void fly() { System.out.println("超音速飞行！"); }
+}
+
+// 3. 上下文（抽象类，也可以是非抽象的具体类）
+abstract class AirCraft {
+    protected FlyBehavior flyBehavior;   // 持有策略接口
+
+    public void fly() {
+        flyBehavior.fly();               // 委托给策略对象
+    }
+    // 还可以提供动态修改策略的方法
+    public void setFlyBehavior(FlyBehavior fb) {
+        this.flyBehavior = fb;
+    }
+}
+
+// 4. 客户端：在构造时或运行时指定具体策略
+class Helicopter extends AirCraft {
+    public Helicopter() {
+        flyBehavior = new SubSonicFly();   // 选择亚音速策略
+    }
+}
+
+// 使用示例
+public class Main {
+    public static void main(String[] args) {
+        AirCraft heli = new Helicopter();
+        heli.fly();                         // 输出：亚音速飞行！
+
+        // 运行时动态改变策略
+        heli.setFlyBehavior(new SuperSonicFly());
+        heli.fly();                         // 输出：超音速飞行！
+    }
+}
+```
