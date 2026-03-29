@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "列表 List/LinkList.md",
+                "file": "接口 interface.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "LinkList"
+              "title": "接口 interface"
             }
           },
           {
@@ -232,10 +232,10 @@
   },
   "active": "be7b57b2759eb407",
   "lastOpenFiles": [
+    "列表 List/LinkList.md",
     "列表 List/LinkList",
     "列表 List/LinkList/IMG-20260328193156227.png",
     "图片/Pasted image 20260328154003.png",
-    "列表 List/LinkList.md",
     "图片/Pasted image 20260328125841.png",
     "图片/Pasted image 20260328130922.png",
     "列表 List/ArrayList.md",
