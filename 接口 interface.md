@@ -186,3 +186,15 @@ public class Main {
     }
 }
 ```
+```
+栈内存                         堆内存
+flyBehavior (引用)  ---------->  SubSonicFly对象
+                                 |
+                                 +-- fly() { "亚音速飞行！" }
+```
+这里有个很巧妙的做法
+* 如果用具体类作为类型 `protected SubSonicFly flyBehavior`
+	* 该变量只能指向`SubSonicFly`或其子类
+	* 直升机永远只能亚音速飞行，无法在运行时切换为超音速
+* 如果用接口作为类型 ·
+	* 
