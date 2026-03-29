@@ -3,7 +3,126 @@
 由于抽象类不能实例化对象，所以**抽象类必须被继承，才能被使用**。也是因为这个原因，通常在设计阶段决定要不要设计抽象类。
 父类包含了子类集合的常见的方法，但是由于父类本身是抽象的，所以不能使用这些方法。
 在 Java 中抽象类表示的是一种继承关系，**一个类只能继承一个抽象类，而一个类却可以实现多个接口**。
-值得注意的是父类不能直接被实例化，ru'xia'tu
+值得注意的是父类不能直接被实例化，但是可以通过实例化一个继承父类的实例化类对象，获取从父类那里继承的方法。
+```java
+/* 文件名 : Employee.java */
+public abstract class Employee
+{
+   private String name;
+   private String address;
+   private int number;
+   public Employee(String name, String address, int number)
+   {
+      System.out.println("Constructing an Employee");
+      this.name = name;
+      this.address = address;
+      this.number = number;
+   }
+   public double computePay()
+   {
+     System.out.println("Inside Employee computePay");
+     return 0.0;
+   }
+   public void mailCheck()
+   {
+      System.out.println("Mailing a check to " + this.name
+       + " " + this.address);
+   }
+   public String toString()
+   {
+      return name + " " + address + " " + number;
+   }
+   public String getName()
+   {
+      return name;
+   }
+   public String getAddress()
+   {
+      return address;
+   }
+   public void setAddress(String newAddress)
+   {
+      address = newAddress;
+   }
+   public int getNumber()
+   {
+     return number;
+   }
+}
+/* 文件名 : Salary.java */
+public class Salary extends Employee
+{
+   private double salary; //Annual salary
+   public Salary(String name, String address, int number, double
+      salary)
+   {
+       super(name, address, number);
+       setSalary(salary);
+   }
+   public void mailCheck()
+   {
+       System.out.println("Within mailCheck of Salary class ");
+       System.out.println("Mailing check to " + getName()
+       + " with salary " + salary);
+   }
+   public double getSalary()
+   {
+       return salary;
+   }
+   public void setSalary(double newSalary)
+   {
+       if(newSalary >= 0.0)
+       {
+          salary = newSalary;
+       }
+   }
+   public double computePay()
+   {
+      System.out.println("Computing salary pay for " + getName());
+      return salary/52;
+   }
+}
+/* 文件名 : AbstractDemo.java */
+public class AbstractDemo
+{
+   public static void main(String [] args)
+   {
+      Salary s = new Salary("Mohd Mohtashim", "Ambehta, UP", 3, 3600.00);
+      Employee e = new Salary("John Adams", "Boston, MA", 2, 2400.00);
+ 
+      System.out.println("Call mailCheck using Salary reference --");
+      s.mailCheck();
+ 
+      System.out.println("\n Call mailCheck using Employee reference--");
+      e.mailCheck();
+    }
+}
+```
+## 抽象方法
+如果你想设计这样一个类，该类包含一个特别的成员方法，该方法的具体实现由它的子类确定，那么你可以在父类中声明该方法为抽象方法。
+Abstract 关键字同样可以用来声明抽象方法，抽象方法只包含一个方法名，而没有方法体。
+**抽象方法没有定义，方法名后面直接跟一个分号，而不是花括号**。
+```java
+public abstract class Employee
+{
+   private String name;
+   private String address;
+   private int number;
+   
+   public abstract double computePay();
+   
+   //其余代码
+}
+```
+上面代码中
+```Java
+public abstract double computePay();
+```
+就是一个抽象方法。
+
+声明抽象方法会造成以下两个结果：
+- 如果一个类包含抽象方法，那么该类必须是抽象类。
+- 任何子类必须重写父类的抽象方法，或者声明自身为抽象类。
 ## 桥接模式
 桥接模式是一种**结构型设计模式**，它的核心目的是**将抽象部分与它的实现部分分离，使它们都可以独立地变化**。
 ### 为什么要使用桥接模式？
