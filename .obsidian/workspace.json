@@ -53,12 +53,14 @@
             "id": "c1f1e9d3ec1d336e",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "List/ArrayList/IMG-20260329213158738.png"
+                "file": "this 和 super的用法.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "IMG-20260329213158738"
+              "icon": "lucide-file",
+              "title": "this 和 super的用法"
             }
           },
           {
@@ -133,7 +135,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "a652362d47ff2511",
@@ -273,6 +276,7 @@
   },
   "active": "c1f1e9d3ec1d336e",
   "lastOpenFiles": [
+    "List/ArrayList/IMG-20260329213158738.png",
     "List/LinkList/IMG-20260329213158731.png",
     "interface.md",
     "abstract.md",
@@ -286,7 +290,6 @@
     "README.md",
     "List/LinkList.md",
     "List/LinkList",
-    "List/ArrayList/IMG-20260329213158738.png",
     "List/List/IMG-20260329213158741.png",
     "List/ArrayList.md",
     "List/List.md",
