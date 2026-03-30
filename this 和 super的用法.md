@@ -69,8 +69,48 @@ class City extends Country {
 **3.引用构造函数**
 - **super(参数)**：调用父类中的某一个构造函数（应该为构造函数中的第一条语句）。
 - **this(参数)**：调用本类中另一种形式的构造函数（应该为构造函数中的第一条语句）。
+```java
+class Person { 
+    public static void prt(String s) { 
+       System.out.println(s); 
+    } 
+   
+    Person() { 
+       prt("父类·无参数构造方法： "+"A Person."); 
+    }//构造方法(1) 
+    
+    Person(String name) { 
+       prt("父类·含一个参数的构造方法： "+"A person's name is " + name); 
+    }//构造方法(2) 
+} 
+    
+public class Chinese extends Person { 
+    Chinese() { 
+       super(); // 调用父类构造方法（1） 
+       prt("子类·调用父类"无参数构造方法"： "+"A chinese coder."); 
+    } 
+    
+    Chinese(String name) { 
+       super(name);// 调用父类具有相同形参的构造方法（2） 
+       prt("子类·调用父类"含一个参数的构造方法"： "+"his name is " + name); 
+    } 
+    
+    Chinese(String name, int age) { 
+       this(name);// 调用具有相同形参的构造方法（3） 
+       prt("子类：调用子类具有相同形参的构造方法：his age is " + age); 
+    } 
+    
+    public static void main(String[] args) { 
+       Chinese cn = new Chinese(); 
+       cn = new Chinese("codersai"); 
+       cn = new Chinese("codersai", 18); 
+    } 
+}
+```
+从本例可以看到，可以用 super 和 this 分别调用父类的构造方法和本类中其他形式的构造方法。
+例子中 Chinese 类第三种构造方法调用的是本类中第二种构造方法，而第二种构造方法是调用父类的，因此也要先调用父类的构造方法，再调用本类中第二种，最后是重写第三种构造方法。
 在这里补充一下构造函数的知识：
-### 构造函数
+##### 构造函数
 
 **1. 方法名必须与类名完全相同**
 ```java
