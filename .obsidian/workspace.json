@@ -50,6 +50,18 @@
             }
           },
           {
+            "id": "c1f1e9d3ec1d336e",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "List/ArrayList/IMG-20260329213158738.png"
+              },
+              "icon": "lucide-image",
+              "title": "IMG-20260329213158738"
+            }
+          },
+          {
             "id": "cb581ef0d3fea7e1",
             "type": "leaf",
             "state": {
@@ -64,7 +76,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -121,8 +133,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "a652362d47ff2511",
@@ -260,20 +271,21 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ab7957c1e8f49f4c",
+  "active": "c1f1e9d3ec1d336e",
   "lastOpenFiles": [
-    "数组",
-    "数组/IMG-20260329214137064.png",
+    "List/LinkList/IMG-20260329213158731.png",
     "interface.md",
+    "abstract.md",
     "数组.md",
+    "图片/Pasted image 20260328154003.png",
+    "图片/IMG-20260329214137064.png",
+    "this 和 super的用法.md",
+    "数组",
     "List/List",
     "List/ArrayList",
-    "abstract.md",
     "README.md",
     "List/LinkList.md",
     "List/LinkList",
-    "List/LinkList/IMG-20260329213158731.png",
-    "图片/Pasted image 20260328154003.png",
     "List/ArrayList/IMG-20260329213158738.png",
     "List/List/IMG-20260329213158741.png",
     "List/ArrayList.md",
